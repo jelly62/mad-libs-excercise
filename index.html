@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="madLibs.js"></script>
+
+</head>
+<body>
+    <div class="row">
+        <h1>Mad Libs</h1>
+    </div>
+    <div id="wordList" class="row">
+        Please enter the words below:<br><br>
+        <span>
+            <!--placeholder=""-->
+            <input type="text" id="word1" class="words clean-slide"/>
+            <label for="word1" >occupation</label>
+        </span>
+        <i><br>Please enter occupation.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word2" class="words clean-slide"/>
+            <label for="word2">food (singular)</label>
+        </span>
+        <i><br>Please enter food.</i>
+        <br>
+
+        <span>   
+            <input type="text" id="word3" class="words clean-slide"/> 
+            <label for="word3">number</label>
+        </span>
+        <i><br>Please enter number.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word4" class="words clean-slide"/>
+            <label for="word4">plural noun</label>
+        </span>
+        <i><br>Please enter plural noun.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word5" class="words clean-slide"/>
+            <label for="word5" >exclamation</label>
+        </span>
+        <i><br>Please enter exclamation.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word6" class="words clean-slide"/>
+            <label for="word6" >adjective</label>
+        </span>
+        <i><br>Please enter adjective.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word7" class="words clean-slide"/>
+            <label for="word7" >verb ending in ing</label>
+        </span>
+        <i><br>Please enter verb ending in ing.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word8" class="words clean-slide"/>
+            <label for="word8" >animals</label>
+        </span>
+        <i><br>Please enter animals.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word9"class="words clean-slide"/>
+            <label for="word9" >verb ending in ing</label>
+        </span>
+        <i><br>Please enter verb ending in ing.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word10" class="words clean-slide"/>
+            <label for="word10" >singular noun </label>
+        </span>
+        <i><br>Please enter singular noun.</i>
+        <br>
+
+        <span>
+            <input type="text" id="word11" class="words clean-slide"/>
+            <label for="word11">adjective</label>
+        </span>
+        <i><br>Please enter adjective.</i>
+        <br>
+        <br>
+        <span>
+            <input type="button" value="Submit!" id="btnSubmit">
+        </span>
+    </div>
+    <p id="paragraphMad" class="row">
+        <span id="paraTitle">A holiday at the beach</span><br>
+        <br>Yesterday, I went to the beach for holiday. 
+        After I arrived at the beach, 
+        a/an <span class="outputWords">[occupation]</span> came by 
+        and asked if I would like one <span class="outputWords">[singular noun]</span>.
+        It cost me $<span class="outputWords">[number]</span>. 
+        I ate it along with <span class="outputWords">[plural noun]</span>. 
+        <span class="outputWords">[Exclamation]</span>, 
+        they were so <span class="outputWords">[adjective]</span>! 
+        I spent the rest of the time <span class="outputWords">[verb ending in ing]</span> in the sea.
+        With many <span class="outputWords">[animals]</span> 
+        <span class="outputWords">[verb ending in ing]</span> around me in the sea, 
+        it felt like I am a/an <span class="outputWords">[singular noun]</span>!
+        What a/an <span class="outputWords">[adjective]</span> day!
+        <br><br>
+        <input type="button" value="Back" id="btnBack">   
+    </p>
+</body>
+</html>

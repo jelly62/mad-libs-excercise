@@ -1,0 +1,181 @@
+/* Overall */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background: #f7f7f7;
+}
+
+/* Background and Title */
+.row {
+  max-width: 100%;
+  margin: 8px auto;
+  padding: 30px 30px;
+  background: #ffc952;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  border:10px solid #ffc952;
+  border-radius: 12px;
+}
+h1{
+  font-family: 'Luckiest Guy', cursive;
+  font-size:60px;
+  margin-top:20px;
+  margin-bottom:10px;
+  text-shadow: 0.1em 0.1em 0.05em #ffb615;
+}
+.row:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: -5000px;
+  height: 100%;
+  width: 15000px;
+  z-index: -1;
+  background: inherit;
+  
+}
+.row:nth-child(2),.row:nth-child(3){
+  background: #58ccf7;
+  border:10px solid #58ccf7;
+  border-radius: 12px;
+}
+
+/* Input */
+.row span {
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px;
+}
+.clean-slide {
+  position: relative;
+  display: inline-block;
+  width: 290px;
+  padding: 10px 0 10px 90px;
+  font-family: 'Patrick Hand', cursive;
+  font-size:25px;
+  line-height:25px;
+  font-weight: 400;
+  color: #032429;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 60px;
+  transition: all .3s ease-in-out;
+}
+.clean-slide + label {
+  display: inline-block;
+  position: absolute;
+  transform: translateX(0);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 19px 15px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #032429;
+  text-align: left;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all .3s ease-in-out, color .3s ease-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  overflow: hidden;
+}
+.clean-slide + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  background: #ffc952;
+  z-index: -1;
+  transform: translate(0);
+  transition: all .3s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.clean-slide:focus,
+.clean-slide:active {
+  color: #032429;
+  text-indent: 0;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.clean-slide:focus::-webkit-input-placeholder,
+.clean-slide:active::-webkit-input-placeholder {
+  color: #aaa;
+}
+.clean-slide:focus + label,
+.clean-slide:active + label {
+  color: #fff;
+  text-shadow: 0 1px 0 #ffb615;
+  transform: translateX(-100%);
+}
+.clean-slide:focus + label:after,
+.clean-slide:active + label:after {
+  transform: translate(100%);
+}
+
+/* Buttons */
+#btnSubmit, #btnBack{
+  width:100px;
+  height:38px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border:0;
+  border-radius: 3px;
+  text-align: center;
+  color: #032429;
+  background-color:#ffc952;
+  text-shadow: 0 1px 0 #ffb615;
+  
+}
+#btnSubmit:hover, #btnBack:hover{
+  background-color:#ffb615;
+  box-shadow: 1px 1px 1px  rgba(255, 182, 15, 1);
+}
+/* Hints */
+i{
+  display: none;
+}
+
+/* Paragraph */
+p{
+  text-shadow: 0 1px 0 rgba(3, 164, 224, 1);
+  font-size:30px;
+  font-weight: 500;
+  font-family: 'Patrick Hand', cursive;
+  display:none;
+}
+#paraTitle{
+  color: #032429;
+  font-size: 40px;
+}
+.outputWords{
+  color: #032429;
+  background-color:rgba(255, 201, 52, 1);
+
+  border-radius:5px;
+  text-shadow: 0 1px 0  rgba(255, 182, 15, 1);
+  text-decoration: underline #032429;
+}
+.outputWords:nth-of-type(6){
+  text-transform: capitalize;
+}
